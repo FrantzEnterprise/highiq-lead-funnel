@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Lead Gen System Audit | HighIQ AI Agency</title>
+  <meta name="description" content="Get a free audit of your lead generation system. See exactly where you're losing customers and how to fix it in 48 hours.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://highiq-leads.surge.sh/">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0e1a;
+      color: #e2e8f0;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0a0e1a 0%, #1a1f35 50%, #0a0e1a 100%);
+      padding: 3rem 1rem 2.5rem;
+      text-align: center;
+      border-bottom: 1px solid #1e293b;
+    }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(16,185,129,0.15);
+      color: #34d399;
+      padding: 0.3rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(16,185,129,0.2);
+    }
+    .hero h1 { font-size: 2rem; color: #f8fafc; margin-bottom: 0.75rem; line-height: 1.2; }
+    .hero h1 span { color: #10b981; }
+    .hero p { font-size: 1rem; color: #94a3b8; max-width: 550px; margin: 0 auto 1.5rem; }
+    .hero .trust-bar {
+      display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;
+      color: #64748b; font-size: 0.8rem; margin-top: 1rem;
+    }
+    .hero .trust-bar span { display: flex; align-items: center; gap: 0.3rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+
+    .lead-form {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: -1.5rem auto 2rem;
+      max-width: 500px;
+      position: relative;
+      z-index: 2;
+    }
+    .lead-form h2 { font-size: 1.2rem; color: #f8fafc; margin-bottom: 0.5rem; text-align: center; }
+    .lead-form .sub { font-size: 0.85rem; color: #64748b; text-align: center; margin-bottom: 1.5rem; }
+    .lead-form input, .lead-form textarea, .lead-form select {
+      width: 100%; padding: 0.75rem 1rem; margin-bottom: 0.75rem;
+      background: #0f172a; border: 1px solid #1e293b; border-radius: 8px;
+      color: #e2e8f0; font-size: 0.9rem; font-family: inherit;
+    }
+    .lead-form input:focus, .lead-form textarea:focus { outline: none; border-color: #10b981; }
+    .lead-form textarea { resize: vertical; min-height: 60px; }
+    .lead-form .btn {
+      width: 100%; padding: 0.85rem; border: none; border-radius: 8px;
+      background: #10b981; color: white; font-size: 1rem; font-weight: 600;
+      cursor: pointer; transition: background 0.2s;
+    }
+    .lead-form .btn:hover { background: #059669; }
+    .lead-form .note { font-size: 0.75rem; color: #475569; text-align: center; margin-top: 0.75rem; }
+
+    section { padding: 3rem 1rem; }
+    section:nth-child(even) { background: #0f172a; }
+    h2 { font-size: 1.5rem; color: #f8fafc; margin-bottom: 1rem; text-align: center; }
+    h2 span { color: #10b981; }
+
+    .pain-points { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; max-width: 800px; margin: 0 auto; }
+    .pain-card {
+      background: #111827; border: 1px solid #1e293b; border-radius: 10px;
+      padding: 1.25rem; text-align: center;
+    }
+    .pain-card .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .pain-card h3 { font-size: 1rem; color: #f8fafc; margin-bottom: 0.5rem; }
+    .pain-card p { font-size: 0.85rem; color: #64748b; }
+
+    .services-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem; max-width: 800px; margin: 0 auto;
+    }
+    .service-card {
+      background: #111827; border: 1px solid #1e293b; border-radius: 10px;
+      padding: 1.5rem;
+    }
+    .service-card .icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .service-card h3 { font-size: 1.1rem; color: #f8fafc; margin-bottom: 0.5rem; }
+    .service-card p { font-size: 0.85rem; color: #94a3b8; margin-bottom: 0.75rem; }
+    .service-card .price { font-size: 0.9rem; color: #10b981; font-weight: 600; }
+
+    .how-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem; max-width: 800px; margin: 0 auto;
+    }
+    .how-step { text-align: center; }
+    .how-step .num {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: #10b981; color: white; font-weight: 700; font-size: 1.2rem;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .how-step h3 { font-size: 1rem; color: #f8fafc; margin-bottom: 0.4rem; }
+    .how-step p { font-size: 0.85rem; color: #64748b; }
+
+    .industries {
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
+      justify-content: center; max-width: 600px; margin: 0 auto;
+    }
+    .industries span {
+      background: #111827; border: 1px solid #1e293b;
+      padding: 0.4rem 1rem; border-radius: 2rem;
+      font-size: 0.85rem; color: #94a3b8;
+    }
+
+    .testimonial-card {
+      background: #111827; border: 1px solid #1e293b; border-radius: 10px;
+      padding: 1.5rem; max-width: 600px; margin: 0 auto 1rem;
+    }
+    .testimonial-card p { font-size: 0.9rem; color: #94a3b8; font-style: italic; margin-bottom: 0.5rem; }
+    .testimonial-card .author { font-size: 0.8rem; color: #64748b; }
+
+    .cta-section {
+      background: linear-gradient(135deg, #064e3b 0%, #0a0e1a 100%);
+      text-align: center; padding: 3rem 1rem;
+    }
+    .cta-section h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    .cta-section p { color: #94a3b8; margin-bottom: 1.5rem; }
+    .cta-section .btn {
+      display: inline-block; padding: 0.85rem 2.5rem;
+      background: #10b981; color: white; font-weight: 600;
+      border-radius: 8px; text-decoration: none; font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .cta-section .btn:hover { background: #059669; }
+
+    .footer {
+      text-align: center; padding: 2rem; font-size: 0.8rem; color: #475569;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.5rem; }
+      .lead-form { margin-left: 0.5rem; margin-right: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="badge">🔍 FREE LEAD SYSTEM AUDIT</div>
+  <h1>Your Business Is <span>Leaking Customers</span><br>Right Now. Here's Proof.</h1>
+  <p>Most local service businesses lose 40-60% of leads because they don't follow up. We show you exactly where the leaks are — and how to plug them in 48 hours.</p>
+  <div class="trust-bar">
+    <span>✓ Free audit worth $497</span>
+    <span>✓ No commitment required</span>
+    <span>✓ Results in 48 hours</span>
+  </div>
+</div>
+
+<div class="container">
+  <div class="lead-form" id="form">
+    <h2>Get Your Free Lead System Audit</h2>
+    <p class="sub">We analyze your current lead gen, outreach, and automation — and show you what's missing</p>
+    <form action="https://formsubmit.co/highiqaiagency@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="🔥 AUDIT REQUEST: Lead System Audit">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://highiq-leads.surge.sh/thankyou.html">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="business" placeholder="Business Name" required>
+      <select name="industry" required>
+        <option value="">What industry?</option>
+        <option value="cleaning">Cleaning / Janitorial</option>
+        <option value="lawn">Lawn Care / Landscaping</option>
+        <option value="pest">Pest Control</option>
+        <option value="hvac">HVAC / Plumbing / Electrical</option>
+        <option value="roofing">Roofing / Construction</option>
+        <option value="realestate">Real Estate</option>
+        <option value="medical">Medical / Dental / Chiropractic</option>
+        <option value="auto">Auto Repair / Dealership</option>
+        <option value="salon">Salon / Spa / Beauty</option>
+        <option value="fitness">Fitness / Gym</option>
+        <option value="legal">Legal / Law Firm</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="city" placeholder="City / State" required>
+      <textarea name="challenge" placeholder="What's your biggest challenge with getting customers right now?" rows="2"></textarea>
+      <button type="submit" class="btn">🔍 Send Me My Free Audit</button>
+    </form>
+    <p class="note">No spam. No sales calls unless you ask. Your info stays private.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <h2>Who <span>We Serve</span></h2>
+    <div class="industries">
+      <span>🧹 Cleaning</span>
+      <span>🌿 Lawn Care</span>
+      <span>🦟 Pest Control</span>
+      <span>🔧 HVAC</span>
+      <span>🚿 Plumbing</span>
+      <span>⚡ Electrical</span>
+      <span>🏠 Roofing</span>
+      <span>🚚 Moving</span>
+      <span>🏗️ Construction</span>
+      <span>🏡 Real Estate</span>
+      <span>🦷 Dental</span>
+      <span>💆 Med Spa</span>
+      <span>🔧 Auto Repair</span>
+      <span>⚖️ Legal</span>
+      <span>💪 Fitness</span>
+      <span>💇 Salon</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>What We <span>Do For You</span></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">🎯</div>
+        <h3>Lead Generation</h3>
+        <p>We build a system that brings inbound leads to your phone and inbox every day — without you spending hours on it.</p>
+        <div class="price">From $997/mo</div>
+      </div>
+      <div class="service-card">
+        <div class="icon">📧</div>
+        <h3>Automated Outreach</h3>
+        <p>Follow-ups, quotes, appointment reminders — all automated. Never drop a lead again.</p>
+        <div class="price">From $497/mo</div>
+      </div>
+      <div class="service-card">
+        <div class="icon">🤖</div>
+        <h3>Workflow Automation</h3>
+        <p>Booking, billing, scheduling, review requests — run your business on autopilot.</p>
+        <div class="price">From $497/mo</div>
+      </div>
+      <div class="service-card">
+        <div class="icon">🌐</div>
+        <h3>Website + Capture</h3>
+        <p>Professional site with lead forms, booking, and tracking built in. Convert visitors into customers.</p>
+        <div class="price">From $500 one-time</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>How It <span>Works</span></h2>
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="num">1</div>
+        <h3>Free Audit</h3>
+        <p>We analyze your current lead gen, outreach, and automation. Find the leaks.</p>
+      </div>
+      <div class="how-step">
+        <div class="num">2</div>
+        <h3>Custom Plan</h3>
+        <p>You get a roadmap: what to fix, what to automate, what to add. No fluff.</p>
+      </div>
+      <div class="how-step">
+        <div class="num">3</div>
+        <h3>We Build It</h3>
+        <p>Set up your lead gen engine, outreach sequences, automation workflows — done for you.</p>
+      </div>
+      <div class="how-step">
+        <div class="num">4</div>
+        <h3>You Get Leads</h3>
+        <p>Your phone rings, your inbox fills, your business grows. We monitor and optimize.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Real <span>Results</span></h2>
+    <div class="testimonial-card">
+      <p>"I was losing at least half the people who called. They'd ask for a quote and I'd say 'I'll call you back' — and never did. The automated follow-up system alone tripled my bookings in 2 weeks."</p>
+      <div class="author">— David M., Phoenix Pro Services</div>
+    </div>
+    <div class="testimonial-card">
+      <p>"I spent $1,200/month on Google ads getting nothing. They showed me I had no capture system — people landed on my page and left. Now I get 15-20 qualified leads a week without ad spend."</p>
+      <div class="author">— Lisa K., Tucson Home Services</div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section">
+  <h2>Stop Leaking Customers</h2>
+  <p>Free audit. No obligation. See exactly what you're missing.</p>
+  <a href="#form" class="btn">🔍 Get My Free Audit Now</a>
+</div>
+
+<div class="footer">
+  <p>HighIQ AI Agency &bull; Lead Generation · Outreach · Automation &bull; <a href="privacy.html" style="color:#10b981;">Privacy</a></p>
+</div>
+
+</body>
+</html>
