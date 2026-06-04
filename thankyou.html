@@ -3,40 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Audit Request Received — HighIQ AI Agency</title>
+  <title>Payment Complete — HighIQ AI Agency</title>
   <meta name="robots" content="noindex">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: #0a0e1a; color: #e2e8f0;
-      display: flex; align-items: center; justify-content: center;
       min-height: 100vh; padding: 2rem;
     }
+    .container { max-width: 550px; margin: 0 auto; }
     .card {
       background: #111827; border: 1px solid #1e293b;
-      border-radius: 12px; padding: 3rem 2rem;
-      max-width: 500px; text-align: center;
+      border-radius: 12px; padding: 2rem;
+      text-align: center; margin-bottom: 1.5rem;
     }
     .check { font-size: 3rem; margin-bottom: 1rem; }
-    h1 { font-size: 1.5rem; color: #f8fafc; margin-bottom: 1rem; }
-    p { color: #94a3b8; font-size: 0.95rem; line-height: 1.6; }
-    .waiting {
-      margin-top: 1.5rem; padding: 1rem; border-radius: 8px;
-      background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.2);
+    h1 { font-size: 1.4rem; color: #f8fafc; margin-bottom: 0.75rem; }
+    p { color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.75rem; }
+    .form-card {
+      background: #111827; border: 1px solid #1e293b;
+      border-radius: 12px; padding: 2rem;
     }
-    .waiting p { font-size: 0.85rem; }
+    .form-card h2 { font-size: 1.1rem; color: #f8fafc; margin-bottom: 1rem; }
+    .form-card input, .form-card textarea, .form-card select {
+      width: 100%; padding: 0.75rem 1rem; margin-bottom: 0.75rem;
+      background: #0f172a; border: 1px solid #1e293b; border-radius: 8px;
+      color: #e2e8f0; font-size: 0.9rem; font-family: inherit;
+    }
+    .form-card input:focus, .form-card textarea:focus { outline: none; border-color: #10b981; }
+    .form-card textarea { resize: vertical; min-height: 60px; }
+    .form-card .btn {
+      width: 100%; padding: 0.85rem; border: none; border-radius: 8px;
+      background: #10b981; color: white; font-size: 1rem; font-weight: 600;
+      cursor: pointer;
+    }
+    .form-card .btn:hover { background: #059669; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="check">✅</div>
-    <h1>Your Free Audit Is Being Processed</h1>
-    <p>We'll send your <strong>custom Lead System Audit</strong> to your email within 48 hours. It will include a breakdown of where you're losing leads and exactly what to fix.</p>
-    <div class="waiting">
-      <p>📬 In the meantime, we've sent a confirmation to your email. Check your inbox (and spam) for <strong>"Your Audit Confirmation"</strong></p>
+  <div class="container">
+    <div class="card">
+      <div class="check">✅</div>
+      <h1>Payment Received — Thank You!</h1>
+      <p>Your $47 payment went through. Now just tell us about your business so we can run your audit.</p>
     </div>
-    <p style="margin-top:1.5rem;font-size:0.8rem;color:#475569;">Questions? Reply to our email — we answer every single one.</p>
+    <div class="form-card">
+      <h2>Tell Us About Your Business</h2>
+      <form action="https://formsubmit.co/highiqaiagency@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="💰 PAID — Lead System Audit Details">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://frantzenterprise.github.io/highiq-lead-funnel/confirmed.html">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="business" placeholder="Business Name" required>
+        <select name="industry" required>
+          <option value="">What industry?</option>
+          <option value="cleaning">Cleaning / Janitorial</option>
+          <option value="lawn">Lawn Care / Landscaping</option>
+          <option value="pest">Pest Control</option>
+          <option value="hvac">HVAC / Plumbing / Electrical</option>
+          <option value="roofing">Roofing / Construction</option>
+          <option value="realestate">Real Estate</option>
+          <option value="medical">Medical / Dental / Chiropractic</option>
+          <option value="auto">Auto Repair / Dealership</option>
+          <option value="salon">Salon / Spa / Beauty</option>
+          <option value="fitness">Fitness / Gym</option>
+          <option value="legal">Legal / Law Firm</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="city" placeholder="City / State" required>
+        <textarea name="challenge" placeholder="What's your biggest challenge with getting customers right now?" rows="2"></textarea>
+        <button type="submit" class="btn">📩 Submit & Get My Audit</button>
+      </form>
+    </div>
   </div>
 </body>
 </html>
